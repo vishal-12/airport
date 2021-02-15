@@ -1,0 +1,343 @@
+{
+	"id": "5d3fed26-33e8-46c7-96f2-239fd0c4012b",
+	"name": "Airpot",
+	"description": "",
+	"order": [
+		"be24bd90-abaa-1f0d-a98a-e2b48494f5cf",
+		"b704f6b8-cc9f-5f4f-1a68-4f500395aa71",
+		"13f234a1-656b-c630-fd0c-90d4946b4f19",
+		"02fdbd9a-2c30-14d1-1157-6e8d9648b8f8",
+		"3b10720a-799c-d13a-2406-1267a060775a",
+		"262932ff-a9ba-c6a6-54c3-1b54c9c1fc84",
+		"9d7d214a-a66b-7781-cb7c-006ea89ddb64"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1613200874444,
+	"owner": "4992884",
+	"public": false,
+	"requests": [
+		{
+			"id": "02fdbd9a-2c30-14d1-1157-6e8d9648b8f8",
+			"headers": "Content-Type: application/json\nAuthorization: {{token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/v1/longe-list/update/43",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613415306790,
+			"name": "PUT localhost url",
+			"description": "",
+			"collectionId": "5d3fed26-33e8-46c7-96f2-239fd0c4012b",
+			"responses": [],
+			"rawModeData": "{\"name\": \"Delhi-Internation AirPort Lounge\",\"price\": \"3000\",\"size\": \"120\"}"
+		},
+		{
+			"id": "13f234a1-656b-c630-fd0c-90d4946b4f19",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/token/refresh/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "var data = JSON.parse(responseBody);\r\npostman.setGlobalVariable(\"access_token\", data.access_token);\r\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613415311302,
+			"name": "TOKEN REFRESH",
+			"description": "",
+			"collectionId": "5d3fed26-33e8-46c7-96f2-239fd0c4012b",
+			"responses": [],
+			"rawModeData": "{\"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYxMzMzMTkxNiwianRpIjoiNmNhOWI3MTZhNGUyNDM4MWFlY2U4ZjRiYmU4MWY3ZjEiLCJ1c2VyX2lkIjoxfQ.Z13STy7mlOCd921ixesaW-Rp9U-U39U96V3VtK5ktzc\"}"
+		},
+		{
+			"id": "262932ff-a9ba-c6a6-54c3-1b54c9c1fc84",
+			"headers": "//name: vishal\n//size: 12\n//price: 12000\nAuthorization: {{token}}\n",
+			"headerData": [
+				{
+					"key": "name",
+					"value": "vishal",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "size",
+					"value": "12",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "price",
+					"value": "12000",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/v1/longe-list/delete/42",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613415299612,
+			"name": "DELETE localhost URL",
+			"description": "",
+			"collectionId": "5d3fed26-33e8-46c7-96f2-239fd0c4012b",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "3b10720a-799c-d13a-2406-1267a060775a",
+			"headers": "//name: vishal\n//size: 12\n//price: 12000\nContent-Type: application/json\nAuthorization: {{token}}\n",
+			"headerData": [
+				{
+					"key": "name",
+					"value": "vishal",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "size",
+					"value": "12",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "price",
+					"value": "12000",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/v1/longe-list/add-airport/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613415303159,
+			"name": "POST localhost URL",
+			"description": "",
+			"collectionId": "5d3fed26-33e8-46c7-96f2-239fd0c4012b",
+			"responses": [],
+			"rawModeData": "{\"name\": \"Delhi-Domestic AirPort Lounge\",\"price\": \"3000\",\"size\": \"120\"}"
+		},
+		{
+			"id": "9d7d214a-a66b-7781-cb7c-006ea89ddb64",
+			"headers": "//name: vishal\n//size: 12\n//price: 12000\nAuthorization: {{token}}\n",
+			"headerData": [
+				{
+					"key": "name",
+					"value": "vishal",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "size",
+					"value": "12",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "price",
+					"value": "12000",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/v1/longe-list/delete-all/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613415296260,
+			"name": "DLEETE localhost all",
+			"description": "",
+			"collectionId": "5d3fed26-33e8-46c7-96f2-239fd0c4012b",
+			"responses": [],
+			"rawModeData": "{\n        \"name\": \"XYZ  AirPort Lounge\",\n        \"price\": \"10000\",\n        \"size\": \"120\",\n        \n    }"
+		},
+		{
+			"id": "b704f6b8-cc9f-5f4f-1a68-4f500395aa71",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/token/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "override",
+					"value": "true",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "my-trusted-client",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grant_type",
+					"value": "admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "var data = JSON.parse(responseBody);\r\npostman.setGlobalVariable(\"access_token\", data.access);\r\npostman.setGlobalVariable(\"refresh_token\", data.refresh);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613415314529,
+			"name": "TOKEN",
+			"description": "",
+			"collectionId": "5d3fed26-33e8-46c7-96f2-239fd0c4012b",
+			"responses": []
+		},
+		{
+			"id": "be24bd90-abaa-1f0d-a98a-e2b48494f5cf",
+			"headers": "Authorization: {{token}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/v1/longe-list/delhi/ ",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613415318030,
+			"name": "GET localhost url",
+			"description": "",
+			"collectionId": "5d3fed26-33e8-46c7-96f2-239fd0c4012b",
+			"responses": []
+		}
+	]
+}
